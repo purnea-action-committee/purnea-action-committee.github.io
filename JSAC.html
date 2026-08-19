@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whistleblower Portal | Purnea University Students</title>
+    <style>
+        :root {
+            --primary-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent: #dc2626; /* Alert Red */
+            --border: #e2e8f0;
+            --header-bg: #0f172a;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--primary-bg); color: var(--text-main); line-height: 1.6; }
+        
+        /* Language Toggle Classes */
+        body.hi .lang-en { display: none !important; }
+        body.en .lang-hi { display: none !important; }
+        
+        /* Header & Alerts */
+        header { background-color: var(--header-bg); color: white; padding: 2.5rem 1rem 2rem 1rem; text-align: center; position: relative; }
+        header h1 { margin-bottom: 0.5rem; font-size: 1.8rem; }
+        .alert-banner { background-color: #fef2f2; color: var(--accent); padding: 1rem; text-align: center; font-weight: bold; border-bottom: 1px solid #f87171; }
+        
+        /* Toggle Button */
+        .language-toggle { position: absolute; top: 1rem; right: 1rem; background-color: var(--card-bg); color: var(--text-main); border: 1px solid var(--border); padding: 0.4rem 0.8rem; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.9rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: 0.2s; }
+        .language-toggle:hover { background-color: #e2e8f0; }
+
+        /* Layout */
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+        .card { background: var(--card-bg); border-radius: 8px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); border: 1px solid var(--border); }
+        .card h2 { margin-bottom: 1rem; color: var(--header-bg); border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; display: inline-block;}
+        
+        /* Scrollable Petition Box */
+        .petition-box { height: 250px; overflow-y: auto; background: #f1f5f9; padding: 1.5rem; border-radius: 6px; border: 1px solid var(--border); font-family: 'Courier New', Courier, monospace; font-size: 0.95rem; white-space: pre-wrap; }
+        
+        /* Forms */
+        .btn-submit { background-color: var(--accent); color: white; border: none; padding: 1rem 2rem; font-size: 1rem; font-weight: bold; border-radius: 4px; cursor: pointer; width: 100%; transition: 0.3s; }
+        .btn-submit:hover { background-color: #b91c1c; }
+        
+        /* Utility */
+        .text-sm { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem; display: block;}
+    </style>
+</head>
+<body class="en">
+
+    <div class="alert-banner">
+        <span class="lang-en">⚠️ DO NOT disclose your exact roll number or personal phone number publicly. Mask sensitive details in your evidence uploads.</span>
+        <span class="lang-hi">⚠️ अपना सटीक रोल नंबर या व्यक्तिगत फोन नंबर सार्वजनिक रूप से उजागर न करें। अपने साक्ष्य अपलोड में संवेदनशील विवरण छुपाएं।</span>
+    </div>
+
+    <header>
+        <button class="language-toggle" onclick="toggleLanguage()">🌐 English / हिन्दी</button>
+        <h1 class="lang-en">Joint Student Action Committee</h1>
+        <h1 class="lang-hi">संयुक्त छात्र कार्रवाई समिति</h1>
+        
+        <p class="lang-en">Purnea University - Official Whistleblower & Evidence Portal</p>
+        <p class="lang-hi">पूर्णिया विश्वविद्यालय - आधिकारिक व्हिसलब्लोअर और साक्ष्य पोर्टल</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Section 1: The Memorandum -->
+        <div class="card">
+            <h2 class="lang-en">Official Memorandum to Raj Bhavan</h2>
+            <h2 class="lang-hi">राजभवन को आधिकारिक ज्ञापन</h2>
+            
+            <p class="lang-en" style="margin-bottom: 1rem;">Review the formal petition below. By submitting the form, you append your digital signature to this dossier.</p>
+            <p class="lang-hi" style="margin-bottom: 1rem;">नीचे दी गई औपचारिक याचिका की समीक्षा करें। फ़ॉर्म जमा करके, आप इस डोजियर में अपना डिजिटल हस्ताक्षर जोड़ते हैं।</p>
+            
+            <div class="petition-box lang-en">CONFIDENTIAL / URGENT
+
+DATE: August 19, 2026
+
+TO:
+The Principal Secretary to the Hon'ble Governor-cum-Chancellor,
+Governor’s Secretariat, Raj Bhavan, Patna, Bihar – 800022
+
+SUBJECT: Formal Petition seeking Statutory External Inquiry under Section 9(2) read with Section 9(7) of the Bihar State Universities Act, 1976, into Systemic Irregularities, Examination Delays, and Administrative Malpractices at Purnea University.
+
+RESPECTED SIR/MADAM,
+We, the Joint Student Action Committee, representing students across undergraduate and postgraduate batches of constituent and affiliated colleges under Purnea University, submit this urgent memorandum to the Hon'ble Chancellor...
+
+[1] INSTITUTIONALIZED EXTORTION ACROSS ALL COLLEGES
+[2] DELIBERATE EXAMINATION AND SEMESTER DELAYS
+[3] MASS MISAPPROPRIATION OF DEVELOPMENT FUNDS
+
+PRAYER:
+Order a High-Level External Inquiry, Institute Digital Tracking Oversight, and grant Whistleblower Blanket Protection.
+
+YOURS FAITHFULLY,
+The Joint Student Action Committee</div>
+
+            <div class="petition-box lang-hi">गोपनीय / अति आवश्यक
+
+दिनांक: 19 अगस्त, 2026
+
+प्रति:
+प्रधान सचिव, माननीय राज्यपाल-सह-कुलाधिपति,
+राज्यपाल सचिवालय, राजभवन, पटना, बिहार - 800022
+
+विषय: पूर्णिया विश्वविद्यालय में प्रणालीगत अनियमितताओं, परीक्षा में देरी और प्रशासनिक कदाचार की बिहार राज्य विश्वविद्यालय अधिनियम, 1976 की धारा 9(2) और 9(7) के तहत वैधानिक बाहरी जांच के लिए औपचारिक याचिका।
+
+आदरणीय महोदय/महोदया,
+हम, संयुक्त छात्र कार्रवाई समिति, पूर्णिया विश्वविद्यालय के अंतर्गत सभी बैचों और कॉलेजों के छात्रों का प्रतिनिधित्व करते हुए, यह अत्यावश्यक ज्ञापन माननीय कुलाधिपति को सौंपते हैं...
+
+[1] सभी कॉलेजों में संस्थागत उगाही
+[2] जानबूझकर परीक्षा और सेमेस्टर में देरी
+[3] विकास निधि का बड़े पैमाने पर दुरुपयोग
+
+प्रार्थना:
+उच्च स्तरीय बाहरी जांच का आदेश दें, डिजिटल ट्रैकिंग निगरानी स्थापित करें, और व्हिसलब्लोअर को पूर्ण सुरक्षा प्रदान करें।
+
+भवदीय,
+संयुक्त छात्र कार्रवाई समिति</div>
+        </div>
+
+        <!-- Section 2: Submission Button -->
+        <div class="card">
+            <h2 class="lang-en">Submit Evidence</h2>
+            <h2 class="lang-hi">साक्ष्य जमा करें</h2>
+            
+            <p class="lang-en" style="margin-bottom: 1.5rem;">To ensure secure file uploads, evidence submission is handled via our encrypted Google Form. Please ensure all sensitive roll numbers are blurred in your screenshots before uploading.</p>
+            <p class="lang-hi" style="margin-bottom: 1.5rem;">सुरक्षित फ़ाइल अपलोड सुनिश्चित करने के लिए, साक्ष्य प्रस्तुत करना हमारे एन्क्रिप्टेड Google फ़ॉर्म के माध्यम से किया जाता है। कृपया अपलोड करने से पहले सुनिश्चित करें कि आपके स्क्रीनशॉट में सभी संवेदनशील रोल नंबर धुंधले हैं।</p>
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScw3UN2jkF-6J8p6NrPcwXBZmtdb6XdoipM_O3frMNxo-DKLw/viewform?usp=header" target="_blank" style="text-decoration: none;">
+                <button class="btn-submit lang-en">Click Here to Sign & Upload Evidence</button>
+                <button class="btn-submit lang-hi">हस्ताक्षर करने और साक्ष्य अपलोड करने के लिए यहां क्लिक करें</button>
+            </a>
+        </div>
+
+        <!-- Section 3: Public Evidence Board -->
+        <div class="card">
+            <h2 class="lang-en">Public Evidence Board</h2>
+            <h2 class="lang-hi">सार्वजनिक साक्ष्य बोर्ड</h2>
+            
+            <p class="text-sm lang-en" style="margin-bottom: 1rem;">This ledger updates automatically when new evidence is submitted.</p>
+            <p class="text-sm lang-hi" style="margin-bottom: 1rem;">नया साक्ष्य जमा होने पर यह लेजर स्वचालित रूप से अपडेट हो जाता है।</p>
+            
+            <div class="table-responsive" style="height: 400px; overflow: hidden; border-radius: 4px; border: 1px solid var(--border);">
+                <iframe src="https://docs.google.com/spreadsheets/d/1rdHdEB3JNCHBu4VWIuEvXxkUt1tOcL77F2h-vjk4LX8/edit?usp=sharing" width="100%" height="450" frameborder="0" style="margin-top: -30px;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle language toggle -->
+    <script>
+        function toggleLanguage() {
+            const body = document.body;
+            if (body.classList.contains('en')) {
+                body.classList.remove('en');
+                body.classList.add('hi');
+            } else {
+                body.classList.remove('hi');
+                body.classList.add('en');
+            }
+        }
+    </script>
+</body>
+</html>
